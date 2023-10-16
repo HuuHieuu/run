@@ -1,0 +1,48 @@
+.sec-size{
+    height: 517px;
+    max-width: 1440px;
+}
+
+.container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.sec-size .section-infor{
+    height: 100%;
+    background-image: url(https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/bg-info.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.sec-size .container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.row{
+    margin-right: 114px
+}
+
+a{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.sec-size img:first-child{
+    max-width: 46px;
+    margin-right: 14px;
+}
+
+.sec-size img:last-child{
+    max-width: 13px;
+    max-height: 13px;
+    margin-left: 10px;
+}
+
+li{
+    margin: 14px 0;
+}

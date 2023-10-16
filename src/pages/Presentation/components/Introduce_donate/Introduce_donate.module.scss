@@ -1,0 +1,78 @@
+.price-donate{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.size-card{
+    width: 340px;
+    margin: 0 15px 0;
+}
+
+.item{
+    padding: 10px;
+    border: 1px solid #baacac;
+    border-radius: 12px;
+}
+
+.wrap-item-top{
+    display: flex;
+    align-items: center;
+}
+
+.wrap-img img{
+    width: 76px;
+}
+
+.text-left{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.title{
+    color: #727272;
+    font-size: 13px;
+}
+
+.number{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.unit{
+    font-size: 15px;
+}
+
+.item .progress-goal{
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.item .progress-goal p {
+    font-size: 13px;
+    line-height: 25px;
+    color: #727272;
+    text-align: center;
+    padding: 0;
+}
+
+// progress-bar
+.progress{
+    width: 100%;
+    height: 12px;
+    background-color: #e9e9e9;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background-color: #3ABB9B;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    height: 100%;
+    transition: width 0.3s;
+  }

@@ -1,0 +1,142 @@
+.container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#challenge .intro-title{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 40px 0 50px;
+    line-height: initial;
+}
+
+.list-event{
+    width: 100%;
+}
+
+.item-left{
+    padding: 0 30px;
+}
+
+.list-event .item-event img{
+    width: 100%;
+}
+
+.list-event .item-event{
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+// right
+.item-right{
+    max-width: 660px;
+}
+
+.description{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.date{
+    font-size: 14px;
+    color: #292929;
+}
+
+.row-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.target-donate{
+    font-size: 16px;
+    color: #3ABB9B;
+}
+
+// progress-donate
+.progress-donate .progress{
+    width: 100%;
+    margin-bottom: 0;
+    background: rgba(114, 114, 114, 0.5);
+    border-radius: 20px;
+    height: 31px;
+}
+
+.progress-donate .progress .progress-bar{
+    background: #3abb9b;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 31px;
+    color: #fff;
+    text-align: right;
+    padding-right: 15px;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+// target
+.price-donate{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.row-donate{
+    width: 75%;
+}
+
+.price-donate .title{
+    color: #727272;
+    font-size: 15px;
+}
+
+.target img{
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 8px;
+}
+ul{
+    // list-style-type: none;
+    list-style: none;
+    // width: 100%;
+    // display: flex;
+}
+
+.target{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.target li{
+    display: flex;
+    align-items: center;
+    float: left;
+    font-weight: bold;
+    color: #DD1F26;
+    font-size: 15px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+
+.wrap-btn-detail a{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #EA6544 0%, #D12A1E 100%);
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 15px;
+}

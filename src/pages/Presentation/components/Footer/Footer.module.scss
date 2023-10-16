@@ -1,0 +1,35 @@
+.foot-size{
+    max-width: 1400px;
+    max-height: 110px;  
+}
+
+.foot-size .foot-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 120px;
+    padding: 15px;
+}
+
+.foot-size .foot-css{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.foot-size .foot-line{
+    height: 79px;
+    margin: 0 30px;
+}
+
+.foot-size .foot-css .ky-luc{
+    color: #565656;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.foot-size .foot-container .strava{
+    float: left;
+}
