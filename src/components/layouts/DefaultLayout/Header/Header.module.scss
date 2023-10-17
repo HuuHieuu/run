@@ -1,0 +1,82 @@
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin-left: 50px;
+}
+
+.wrapper{
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.inner{
+    padding: 25px 0;
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-ul {
+    padding-top: 10px;
+}
+
+.wrap-ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.wrap-ul li {
+    max-width: calc(500px); /* 20% để có 5 cột và 10px để tạo khoảng cách giữa chúng */
+    margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+    margin-right: 60px;
+    padding: 10px; /* Thêm padding cho các thẻ li nếu cần */
+    font-size: 15px;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    display: none; /* Ẩn menu thả xuống ban đầu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+/* Hiển thị menu thả xuống khi di chuột vào phần tử cha */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.content-right{
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    justify-content:right;
+    
+}

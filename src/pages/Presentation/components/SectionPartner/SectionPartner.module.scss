@@ -1,0 +1,44 @@
+.section-partner-size{
+    max-width: 1400px;
+    height: 500px;
+    margin-top: 120px;
+}
+
+.section-partner-size .title{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-partner-size .title .text{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    line-height: initial;
+    color: black;
+    position: absolute;
+    z-index: 2;
+    background-color: #f0f2f5;
+    padding-right: 20px;
+}
+
+.section-partner-size .title .line{
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    border: 1px solid #de181f;
+}
+
+.section-partner-size .list-logo-partner{
+    text-align: center;
+}
+
+.section-partner-size .list-logo-partner img{
+    margin-top: 100px;
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+.section-partner-size .last-banner{
+    max-width: 1400px;
+}

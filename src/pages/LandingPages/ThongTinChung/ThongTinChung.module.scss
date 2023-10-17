@@ -1,0 +1,106 @@
+.red{
+    color: red !important;
+    font-weight: 600;
+}
+
+.green{
+    color: green;
+}
+
+
+
+.container .head-intro{
+    min-width: 100px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container .text-center{
+    text-align: center;
+}
+
+.img-symbol{
+    max-width: 245px;
+    margin: 20px 0;
+}
+
+.container .head-title{
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2f5496;
+    margin-bottom: 5px;
+}
+
+.container ul li{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.container .list-item-event .item-event{
+    display: inline-block;
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+
+.container .list-item-event .item-event img{
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+.container .list-item-event{
+    margin: 10px 0;
+    display: flex;
+}
+
+.container section{
+    margin-bottom: 50px;
+}
+
+.container .link{
+    display: inline;
+    margin-left: 3px;
+    color: #985801;
+}
+
+.container .custom-li::before{
+    content: "\2022"; /* Dấu chấm Unicode (•) */
+    color: black; /* Màu sắc của dấu chấm */
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+}
+
+.container .custom-li1{
+    list-style-type: disc;
+}
+
+.container .custom-li{
+    margin-left: 20px;
+}
+
+.container .row .row-price-left .img-size{
+    width: 8.6666667%;
+    margin-right: 21px;
+}
+
+.container .row .row-price-right .img-size{
+    width: 16.6666667%;
+    margin-right: 21px;
+}
+
+.container .row-price-lucky .img-size{
+    width: 3.6666667%;
+    margin-right: 21px;
+}
+
+.container .row {
+    display: flex;
+}
+
+.container .row .row-price-right{
+    margin-left: 10px;
+    max-width: 50%;
+}

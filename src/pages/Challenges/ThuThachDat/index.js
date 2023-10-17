@@ -25,7 +25,12 @@ function ThuThachDat() {
                     <img className={cx('img-challenge-size')} src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/thu-thach-dat.png" alt="Thu-thach-dat"></img>
                 </div>
             </div>
+<<<<<<< HEAD
 
+=======
+            
+            
+>>>>>>> develop
             <div>
                 <div className={cx('row-challenge-dat')}>
                     <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/dl/thong-tin-chung/icon-thu-thach-dat.png" alt="icon-thu-thach-dat"/>
@@ -87,12 +92,31 @@ function ThuThachDat() {
                         <img style={{maxWidth:'100%'}} src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/hinh-giai-thuong-moi.png" alt="hinh-giai-thuong"/>
                     </div>
 
+<<<<<<< HEAD
                 </div>
             </div>
 
+=======
+                    <div className={cx('giai-thuong')}>
+                        <a className={cx('btn-toggle-prize')}>
+                            <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/gift.gif" alt="gift"/>
+                            <span>Xem chi tiết giải thưởng và thể lệ</span>
+                            <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/gift.gif" alt="gift"/>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        
+>>>>>>> develop
 
         </>
      );
 }
 
+<<<<<<< HEAD
 export default ThuThachDat
+=======
+export default ThuThachDat
+>>>>>>> develop
