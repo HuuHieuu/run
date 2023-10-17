@@ -1,0 +1,71 @@
+.img-challenge-size{
+    width: 100%;   
+}
+
+.row-challenge-dat{
+    width: 100%;
+    text-align: center;
+}
+
+.row-challenge-dat img{
+    max-width: 200px;
+    margin-top: 50px;
+}
+
+.container-desc{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.container-desc2 .row-infor-event {
+    width: 66.66666667%;
+    float: left;
+}
+
+.container-desc2 .row .row-timeline{
+    margin-bottom: 25px;
+}
+
+.container-desc2 .row-infor-event .item-infor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container-desc2 .row-infor-event .item-infor img{
+    width: 75px;
+}
+
+.container-desc2 .row-infor-event .item-infor .item-detail{
+    display: inline-block;
+    width: calc(100% - 75px);
+    font-size: 15px;
+    padding-left: 24px;
+    line-height: 22.5px;
+}
+
+.container-desc2 .row-infor-event .item-infor .link{
+    display: inline;
+    margin-left: 3px;
+    color: #985801;
+}
+
+.container-desc2 .giai-thuong{
+    float: left;
+    width: 100%;
+}
+
+.container-desc2 .giai-thuong .btn-toggle-prize{
+    font-size: 15px;
+    font-weight: 600;
+    color: #985801;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.container-desc2 .giai-thuong .btn-toggle-prize img{
+    max-width: 40px;
+    vertical-align: middle;
+    margin: 0 10px;
+}

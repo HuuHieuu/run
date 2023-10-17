@@ -48,6 +48,7 @@ import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
 import ThongTinChung from "pages/LandingPages/ThongTinChung";
+import ThuThachDat from "pages/Challenges/ThuThachDat";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -128,8 +129,8 @@ const routes = [
     collapse: [
         {
           name: "Thử thách ĐẤT",
-          route: "/pages/landing-pages/about-us",
-          component: <AboutUs />,
+          route: "/pages/challenge/thuthachdat",
+          component: <ThuThachDat />,
         },
         {
           name: "Thử thách NƯỚC",
