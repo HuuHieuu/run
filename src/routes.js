@@ -49,6 +49,14 @@ import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
 import ThongTinChung from "pages/LandingPages/ThongTinChung";
 import ThuThachDat from "pages/Challenges/ThuThachDat";
+import ThuThachNuoc from "pages/Challenges/ThuThachNuoc"
+import ThuThachLua from "pages/Challenges/ThuThachLua";
+import ThuThachGio from "pages/Challenges/ThuThachGio"
+import ThuThachVo from "pages/Challenges/ThuThachVo"
+
+// prize
+import CoCauGiaiThuong from "pages/Prize/CoCauGiaiThuong";
+
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -134,23 +142,23 @@ const routes = [
         },
         {
           name: "Thử thách NƯỚC",
-          route: "/pages/landing-pages/contact-us",
-          component: <ContactUs />,
+          route: "/pages/challenge/thuthachnuoc",
+          component: <ThuThachNuoc />,
         },
         {
           name: "Thử thách LỬA",
-          route: "/pages/landing-pages/author",
-          component: <Author />,
+          route: "/pages/challenge/thuthachlua",
+          component: <ThuThachLua />,
         },
         {
           name: "Thử thách GIÓ",
-          route: "/pages/landing-pages/author",
-          component: <Author />,
+          route: "/pages/challenge/thuthachgio",
+          component: <ThuThachGio />,
         },
         {
           name: "Thử thách VÔ",
-          route: "/pages/landing-pages/author",
-          component: <Author />,
+          route: "/pages/challenge/thuthachvo",
+          component: <ThuThachVo />,
         },
       ],
   },
@@ -163,8 +171,8 @@ const routes = [
     collapse: [
       {
         name: "Cơ cấu giải thưởng",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        route: "/pages/prize/cocaugiaithuong",
+        component: <CoCauGiaiThuong />,
       },
       {
         name: "Thử thách ĐẤT",

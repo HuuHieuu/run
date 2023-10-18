@@ -25,26 +25,27 @@ function ThuThachDat() {
                     sticky
                 />
                 <div style={{width:"100%", height:'auto', marginTop:"106px"}}>
-                    <img className={cx('img-challenge-size')} src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/thu-thach-dat.png" alt="Thu-thach-dat"></img>
+                    <img className={cx('img-challenge-size')} src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/thu-thach-nuoc.png" alt="Thu-thach-nuoc"></img>
                 </div>
             </div>
 
             <div>
                 <div className={cx('row-challenge-dat')}>
-                    <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/dl/thong-tin-chung/icon-thu-thach-dat.png" alt="icon-thu-thach-dat"/>
+                    <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/dl/icon-thu-thach-nuoc.png" alt="icon-thu-thach-nuoc"/>
                 </div>
             </div>
 
             <div className={cx('container-desc')}>
-                <b>BỀN BỈ </b>
-                - quyết tâm chinh phục từng dặm đường chính là tinh thần nổi bật của thử thách mở màn của hành trình Cung Đường Yêu Thương.
+                Khả năng
+                <b> LINH HOẠT </b>
+                - uyển chuyển, sẵn sàng thích ứng và chinh phục bất kỳ môn thể thao yêu thích nào là tinh thần chủ đạo của thử thách Nước. 
             </div>
 
             <div className={cx('container-desc2')}>
                 <div className={cx('row')}>
                     <div className={cx('row-timeline')}>
                         <div style={{textAlign: 'center'}}>
-                            <b>15/04/2023 - 21/05/2023 </b>
+                            <b>05/06/2023 - 09/07/2023 </b>
                             |
                             <span> Thử thách đã kết thúc</span>
                         </div>
