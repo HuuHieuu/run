@@ -1,0 +1,15 @@
+.text-left{
+    text-align: left;
+}
+
+.text-left .list-prize{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.text-left .list-prize a{
+    color: #985801;
+}

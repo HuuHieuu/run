@@ -5,7 +5,10 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import routes from "routes";
 import Carousel from "pages/Presentation/components/Carousel";
 import Container from "@mui/material/Container"
-import CoCau from "../components/CoCau";
+import CoCau from "./components/CoCau";
+import CoCauMoiThuThach from "./components/CoCauMoiThuThach";
+import KhamPhaYN from "./components/KhamPhaYN";
+import Footer from "pages/Presentation/components/Footer";
 
 const cx = classNames.bind(styles)
 
@@ -34,7 +37,19 @@ function CoCauGiaiThuong() {
                 <CoCau />
             </Container>
 
+            <Container style={{marginTop: '60px'}}>
+                <CoCauMoiThuThach />
+            </Container>
+            
+            <Container>
+                <KhamPhaYN />
+            </Container>
 
+            <div className={cx('last-banner')}>
+                <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/22/bg-tp-png.png" alt="last-banner"/>
+            </div>
+
+            <Footer /> 
         </>
      );
 }

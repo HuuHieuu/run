@@ -27,10 +27,11 @@ import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 import SignIn from"layouts/pages/authentication/sign-in";
 import SignUp from "layouts/pages/authentication/sign-up";
+import ThuThachDat from "layouts/pages/landing-pages/thuthachdat";
 
 // Material Kit 2 React routes
 import routes from "routes";
-
+import MyNavBar from "layouts/pages/MyNavBar";
 
 
 
@@ -59,11 +60,13 @@ export default function App() {
   return (
       <ThemeProvider theme={theme}>
           <CssBaseline />
+          {/* <MyNavBar /> */}
           <Routes>
             {getRoutes(routes)}
             <Route path="/presentation" element={<Presentation />} />
             <Route path="/authentication/signin" element={<SignIn />} />
             <Route path="/authentication/signup" element={<SignUp />} />
+            <Route path="/landing-pages/thuthachdat" element={<ThuThachDat />} />
             <Route path="*" element={<Navigate to="/presentation" />} />
           </Routes>
       </ThemeProvider> 

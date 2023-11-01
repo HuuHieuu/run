@@ -10,7 +10,7 @@ import Footer from "pages/Presentation/components/Footer";
 
 const cx = classNames.bind(styles)
 
-function ThuThachDat() {
+function ThuThachDat(props) {
     return ( 
         <>
             <div style={{display: "flex", flexDirection: "column", alignItems:"center", backgroundColor:"#f0f2f5"}}>
@@ -89,6 +89,10 @@ function ThuThachDat() {
                     <div style={{width: '24.333333333%', float:'left'}}>
                         <img style={{maxWidth:'100%'}} src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/hinh-giai-thuong-moi.png" alt="hinh-giai-thuong"/>
                     </div>
+                </div>
+
+                <div style={{display:'flex', justifyContent:'center', width:'100%'}}>
+                    {props.children}
                 </div>
 
                 <div className={cx('giai-thuong')} style={{height: '137px'}}>

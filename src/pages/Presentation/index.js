@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 // import 'util';
 // import db from "../connection/connect";
@@ -39,6 +24,8 @@ import SignIn from "../LandingPages/SignInBasic"
 
 // Routes
 import routes from "routes";
+import { useState, useEffect } from "react";
+import {useNavigate} from 'react-router-dom'
 
 // classNames
 import classNames from "classnames/bind";
@@ -50,16 +37,71 @@ const cx = classNames.bind(styles);
 
 
 function Presentation() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userAvatar, setUserAvatar] = useState("");
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const navigate = useNavigate();
+
+
+  const handleLogout = () => {
+    // Thực hiện các bước để đăng xuất người dùng
+    // Ví dụ: xóa thông tin đăng nhập từ localStorage hoặc từ trạng thái ứng dụng
+  
+    // Xóa thông tin đăng nhập từ localStorage
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userAvatar');
+  
+    // Cập nhật trạng thái đăng nhập và avatar
+    setIsLoggedIn(false);
+    setUserAvatar("");
+    navigate('/presentation')
+  }; 
+
+  useEffect(() => {
+    // Kiểm tra xem có dữ liệu đăng nhập trong localStorage hay không
+    const storedLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    
+    // Nếu có, cập nhật trạng thái đăng nhập từ localStorage
+    setIsLoggedIn(storedLoggedIn);
+  }, []); 
+
+  // Hàm này được gọi sau khi xác thực thành công và nhận URL của avatar
+  const handleSuccessfulLogin = (avatarUrl) => {
+    setIsLoggedIn(true);
+    setUserAvatar(avatarUrl);
+  };
+
+  const handleLogin = () =>{
+    navigate('/authentication/signin')
+    console.log("da nhan nut dang nhap")
+  }
+
+  const handleAvatarClick = () => {
+    if (isLoggedIn) {
+      // Nếu người dùng đã đăng nhập, thực hiện đăng xuất
+      handleLogout();
+    } else {
+     
+    }
+  };
+
+  
+
+  const isLoggedInFromStorage = localStorage.getItem('isLoggedIn');
+
+
   return (
     <>
       <div style={{display: "flex", flexDirection: "column", alignItems:"center", backgroundColor:"white"}} >
         <DefaultNavbar
           routes={routes}
           action={{
-            type: "internal",
-            route: "/authentication/signin",
-            label: "Đăng nhập",
-            color: "info",
+            type: 'internal',
+            route: isLoggedIn ? "#" : "/authentication/signin",
+            label:  isLoggedIn ? (
+              <img src="" alt="Avatar" onClick={handleAvatarClick} />
+            ) : "Đăng nhập",
+            color: 'info',
           }}
           sticky
         />
@@ -68,6 +110,20 @@ function Presentation() {
           <Carousel/>
         </div>
       </div>
+
+      {/* {isLoggedIn && isMenuVisible && (
+        <div style={{ position: "absolute", top: "100%", right: 0, backgroundColor: "white", boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)" }}>
+        <ul>
+          <li>
+            <button onClick={handleLogout}>Đăng xuất</button>
+          </li>          
+        </ul>
+      </div> */}
+
+        {/* // <div>
+        //   <button onClick={handleLogout}>Đăng xuất</button>
+        // </div>
+      )} */}
 
 
       {/* donate */}

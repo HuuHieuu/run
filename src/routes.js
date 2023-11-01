@@ -43,7 +43,7 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
+// import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 // import SignIn from "layouts/pages/authentication/sign-in";
@@ -56,6 +56,11 @@ import ThuThachVo from "pages/Challenges/ThuThachVo"
 
 // prize
 import CoCauGiaiThuong from "pages/Prize/CoCauGiaiThuong";
+import GiaiThuongDat from "pages/Prize/GiaiThuongDat";
+import GiaiThuongNuoc from "pages/Prize/GiaiThuongNuoc";
+import GiaiThuongLua from "pages/Prize/GiaiThuongLua";
+import GiaiThuongGio from "pages/Prize/GiaiThuongGio";
+import GiaiThuongVo from "pages/Prize/GiaiThuongVo";
 
 
 // Sections
@@ -176,33 +181,33 @@ const routes = [
       },
       {
         name: "Thử thách ĐẤT",
-        route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        route: "/pages/prize/giaithuongthuthachdat",
+        component: <GiaiThuongDat />,
       },
       {
         name: "Thử thách NƯỚC",
-        route: "/pages/landing-pages/contact-us",
-        component: <ContactUs />,
+        route: "/pages/prize/giaithuongthuthachnuoc",
+        component: <GiaiThuongNuoc />,
       },
       {
         name: "Thử thách LỬA",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
+        route: "/pages/prize/giaithuongthuthachlua",
+        component: <GiaiThuongLua />,
       },
       {
         name: "Thử thách GIÓ",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
+        route: "/pages/prize/giaithuongthuthachgio",
+        component: <GiaiThuongGio />,
       },
       {
         name: "Thử thách VÔ",
-        route: "/pages/landing-pages/author",
-        component: <Author />,
+        route: "/pages/prize/giaithuongthuthachvo",
+        component: <GiaiThuongVo />,
       },
       {
         name: "Giải thưởng của tôi",
         route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        component: <ContactUs />,
       },
     ],
   },
@@ -213,7 +218,7 @@ const routes = [
       {
         name: "Thử thách ĐẤT",
         route: "/pages/landing-pages/about-us",
-        component: <AboutUs />,
+        component: <ContactUs />,
       },
       {
         name: "Thử thách NƯỚC",

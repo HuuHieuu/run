@@ -10,7 +10,7 @@ import Footer from "pages/Presentation/components/Footer";
 
 const cx = classNames.bind(styles)
 
-function ThuThachDat() {
+function ThuThachNuoc(props) {
     return ( 
         <>
             <div style={{display: "flex", flexDirection: "column", alignItems:"center", backgroundColor:"#f0f2f5"}}>
@@ -92,6 +92,12 @@ function ThuThachDat() {
                     </div>
                 </div>
 
+
+                <div style={{display:'flex', justifyContent:'center', width:'100%'}}>
+                    {props.children}
+                </div>
+
+
                 <div className={cx('giai-thuong')} style={{height: '137px'}}>
                     <a className={cx('btn-toggle-prize')} href="/">
                         <img src="https://cungduongyeuthuong.dai-ichi-life.com.vn/23/img/gift.gif" alt="gift"/>
@@ -135,4 +141,4 @@ function ThuThachDat() {
         </>
     )
 }
-export default ThuThachDat
+export default ThuThachNuoc
